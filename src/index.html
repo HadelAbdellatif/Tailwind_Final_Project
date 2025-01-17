@@ -1,13 +1,1269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <!-- Top Navbar -->
+      <div class="bg-[#272343] wrapper">
+        <div class="flex lg:items-center justify-center justify-between lg:h-11 h-auto phones:gap-2 lg:justify-between py-2 lg:py-0">
+          <div class="flex opacity-70 gap-1 phones:mb-2 lg:mb-0">
+            <img src="../assets/check 1.svg" alt="check" class="w-4" />
+            <p class="text-white text-center">
+              Free shipping on all orders over $50
+            </p>
+          </div>
+      
+          <!-- The sec column -->
+          <div class="flex gap-6 text-white opacity-70 phones:flex-col lg:flex-row phones:items-center">
+            <!-- Menu Toggle for Phones -->
+            <button id="menuTogglePhones" class="phones:flex lg:hidden text-white">
+              <i class="material-icons">menu</i>
+            </button>
+      
+            <div
+              id="menuPhones"
+              class="flex gap-6 text-white opacity-70 phones:flex-col lg:flex-row phones:items-center phones:hidden"
+            >
+              <div class="flex gap-1">
+                <p class="capitalize">Eng</p>
+                <img src="../assets/Vector.svg" alt="vector" class="w-2" />
+              </div>
+              <p class="capitalize flex gap-1">faqs</p>
+              <div class="flex gap-1">
+                <img src="../assets/alert-circle 1.svg" alt="alert" class="w-4" />
+                <p class="capitalize">need help</p>
+              </div>
+            </div>
+      
+            <!-- lg screens -->
+            <div class="flex gap-5 phones:hidden lg:flex">
+              <div class="flex gap-1">
+                <p class="capitalize">Eng</p>
+                <img src="../assets/Vector.svg" alt="vector" class="w-2" />
+              </div>
+              <p class="capitalize flex gap-1">faqs</p>
+              <div class="flex gap-1">
+                <img src="../assets/alert-circle 1.svg" alt="alert" class="w-4" />
+                <p class="capitalize">need help</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Navbar ✅-->
+      <div class="bg-[#F0F2F3]">
+        <div
+          class="wrapper flex flex-col lg:flex-row justify-between py-5 items-center phones:gap-4 2md:w-auto"
+        >
+          <!-- Logo -->
+          <div class="flex gap-1 phones:mb-4 lg:mb-0">
+            <img src="../assets/Logo Icon.svg" alt="Logo" class="w-fit" />
+            <h1
+              class="capitalize text-2xl font-medium text-primary leading-loose"
+            >
+              Comforty
+            </h1>
+          </div>
+          <!-- Search -->
+          <div class="flex items-center relative lg:w-auto phones:mb-4 lg:mb-0">
+            <input
+              type="text"
+              placeholder="Search here..."
+              class="py-2 px-4 rounded-md bg-white shadow-sm text-gray w-full 2md:w-[413px] text-Regular text-[16px] phones:w-full"
+            />
+            <img
+              src="../assets/search 1.svg"
+              alt="search"
+              class="w-fit absolute right-2"
+            />
+          </div>
+
+          <!--Icons -->
+          <div
+            class="grid grid-cols-3 phones:grid-cols-3 gap-2 phones:w-full lg:w-auto lg:grid-cols-[2fr,1fr,1fr]"
+          >
+            <div
+              class="bg-white px-4 py-2 flex items-center justify-center gap-1 rounded-lg hover:cursor-pointer col-span-3 phones:col-span-1"
+            >
+              <img src="../assets/Group (1).svg" alt="cart" class="w-5 h-5" />
+              <span class="font-medium text-[12px] text-primary">Cart</span>
+              <span
+                class="border rounded-full bg-secondary border-secondary p-1 font-medium text-[10px] text-white w-5 h-5 flex items-center justify-center"
+                >2</span
+              >
+            </div>
+            <div
+              class="bg-white rounded-lg flex items-center justify-center hover:cursor-pointer"
+            >
+              <img src="../assets/Heart.svg" alt="hart" />
+            </div>
+            <div
+              class="bg-white rounded-lg flex items-center justify-center hover:cursor-pointer"
+            >
+              <img src="../assets/Group (2).svg" alt="hart" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttom Navbar ✅-->
+      <div
+        class="bg-white py-3 border-b border-gray3 lg:flex-row phones:flex-col"
+      >
+        <div
+          class="flex lg:flex-row items-center lg:justify-between phones:flex-col phones:gap-5 wrapper"
+        >
+          <div
+            class="flex gap-8 items-center justify-center lg:flex-row phones:flex-col"
+          >
+            <div
+              class="bg-white border-gray3 border px-4 py-2 flex items-center justify-center gap-4 rounded-md hover:cursor-pointer"
+            >
+              <img src="../assets/Menu.svg" alt="menu" class="w-fit" />
+              <span class="capitalize text-primary font-medium text-sm"
+                >All catigories</span
+              >
+            </div>
+            <p
+              class="capitalize font-medium text-sm text-secondary leading-[110%]"
+            >
+              Home
+            </p>
+            <p class="capitalize font-medium text-sm text-gray2 leading-[110%]">
+              shop
+            </p>
+            <p class="capitalize font-medium text-sm text-gray2 leading-[110%]">
+              product
+            </p>
+            <p class="capitalize font-medium text-sm text-gray2 leading-[110%]">
+              pages
+            </p>
+            <p class="capitalize font-medium text-sm text-gray2 leading-[110%]">
+              about
+            </p>
+          </div>
+          <div>
+            <p class="text-gray2 font-Regular text-sm">
+              Contact:
+              <span class="text-primary font-medium text-sm"
+                >(808) 555-0111</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header ✅ -->
+    <header>
+      <div class="relative">
+        <!-- Header Image -->
+        <img
+          src="../assets/Header.svg"
+          alt="header image"
+          class="w-full lg:px-24"
+        />
+
+        <!-- Features Section -->
+        <div class="wrapper">
+          <div
+            class="bg-white rounded-lg py-8 px-4 md:px-8 shadow-lg lg:absolute lg:bottom-[-50px]"
+          >
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+              <div
+                class="w-full md:w-[calc(50%-1.5rem)] lg:w-auto flex gap-4 items-start"
+              >
+                <img src="../assets/box.svg" alt="box" class="w-12 h-12" />
+                <div class="flex flex-col">
+                  <p class="text-primary font-medium text-lg">Discount</p>
+                  <span class="text-gray text-sm font-light"
+                    >Every week new sales</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full md:w-[calc(50%-1.5rem)] lg:w-auto flex gap-4 items-start"
+              >
+                <img
+                  src="../assets/delivery-truck.svg"
+                  alt="truck"
+                  class="w-12 h-12"
+                />
+                <div class="flex flex-col">
+                  <p class="text-primary font-medium text-lg">Free Delivery</p>
+                  <span class="text-gray text-sm font-light"
+                    >100% Free for all orders</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full md:w-[calc(50%-1.5rem)] lg:w-auto flex gap-4 items-start"
+              >
+                <img
+                  src="../assets/24-hours.svg"
+                  alt="hours"
+                  class="w-12 h-12"
+                />
+                <div class="flex flex-col">
+                  <p class="text-primary font-medium text-lg">
+                    Great Support 24/7
+                  </p>
+                  <span class="text-gray text-sm font-light"
+                    >We care your experiences</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full md:w-[calc(50%-1.5rem)] lg:w-auto flex gap-4 items-start"
+              >
+                <img
+                  src="../assets/shield.svg"
+                  alt="shield"
+                  class="w-12 h-12"
+                />
+                <div class="flex flex-col">
+                  <p class="text-primary font-medium text-lg">Secure Payment</p>
+                  <span class="text-gray text-sm font-light"
+                    >100% Secure Payment Method</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Logos Section ✅ -->
+    <section>
+      <div class="wrapper">
+        <div class="grid grid-cols-2 2md:grid-cols-4 lg:flex lg:flex-nowrap gap-4 2md:gap-6 lg:gap-24 my-6 lg:my-24">
+          <div class="flex items-center justify-center w-full 2md:w-1/4 lg:w-auto">
+            <img 
+              src="../assets/Logo (1).svg" 
+              alt="logo" 
+              class="max-w-[120px] 2md:max-w-[150px] lg:max-w-full object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center w-full 2md:w-1/4 lg:w-auto">
+            <img 
+              src="../assets/Logo (2).svg" 
+              alt="logo" 
+              class="max-w-[120px] 2md:max-w-[150px] lg:max-w-full object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center w-full 2md:w-1/4 lg:w-auto">
+            <img 
+              src="../assets/Logo (3).svg" 
+              alt="logo" 
+              class="max-w-[120px] 2md:max-w-[150px] lg:max-w-full object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center w-full 2md:w-1/4 lg:w-auto">
+            <img 
+              src="../assets/Logo (4).svg" 
+              alt="logo" 
+              class="max-w-[120px] 2md:max-w-[150px] lg:max-w-full object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center w-full 2md:w-1/4 lg:w-auto">
+            <img 
+              src="../assets/Logo (5).svg" 
+              alt="logo" 
+              class="max-w-[120px] 2md:max-w-[150px] lg:max-w-full object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center w-full 2md:w-1/4 lg:w-auto">
+            <img 
+              src="../assets/Logo (6).svg" 
+              alt="logo" 
+              class="max-w-[120px] 2md:max-w-[150px] lg:max-w-full object-contain"
+            />
+          </div>
+          <div class="flex items-center justify-center w-full 2md:w-1/4 lg:w-auto">
+            <img 
+              src="../assets/Logo (7).svg" 
+              alt="logo" 
+              class="max-w-[120px] 2md:max-w-[150px] lg:max-w-full object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Featured Section ✅ -->
+    <section>
+      <div class="wrapper">
+        <div
+          class="flex items-center lg:flex-row justify-between mt-20 phones:flex-col"
+        >
+          <p class="font-semibold text-primary text-4xl py-1 capitalize">
+            featured products
+          </p>
+          <div class="flex gap-4">
+            <img src="../assets/Arrow (1).svg" alt="arrow" class="w-fit" />
+            <img src="../assets/Arrow.svg" alt="arrow" class="w-fit" />
+          </div>
+        </div>
+
+        <div class="pt-10 pb-20 grid grid-cols-1 phones:grid-cols-1 2md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Feture 1 -->
+          <div class="flex flex-col">
+            <div class="relative">
+              <img
+                src="../assets/Image (1).svg"
+                alt="product 1"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#01AD5A] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  New
+                </p>
+                <div
+                  class="bg-white rounded-lg flex items-center justify-center hover:cursor-pointer"
+                >
+                  <img src="/assets/Heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart.svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 2 -->
+          <div class="flex flex-col">
+            <div class="relative">
+              <img
+                src="../assets/Image (2).svg"
+                alt="product 2"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#F5813F] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  sales
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                  <span class="text-gray font-regular text-base line-through"
+                    >$39</span
+                  >
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 3 -->
+          <div class="flex flex-col">
+            <img
+              src="../assets/Image (3).svg"
+              alt="product 3"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 4 -->
+          <div class="flex flex-col">
+            <img
+              src="../assets/Image (4).svg"
+              alt="product 4"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Categories Section ✅  -->
+    <section>
+      <div class="wrapper">
+        <div
+          class="flex items-center lg:flex-row justify-between mt-20 phones:flex-col phones:gap-4 lg:gap-0"
+        >
+          <p class="font-semibold text-primary text-4xl py-1 capitalize">
+            Top categories
+          </p>
+          <div class="flex gap-4">
+            <img src="../assets/Arrow (1).svg" alt="arrow" class="w-fit" />
+            <img src="../assets/Arrow.svg" alt="arrow" class="w-fit" />
+          </div>
+        </div>
+      </div>
+      <!-- Categories -->
+      <div class="pt-10 pb-20 flex flex-col phones:gap-6 lg:flex-row lg:gap-6 phones:mx-5 lg:mx-0">
+        <!-- category 1 -->
+        <div class="relative opacity-30 hidden lg:block">
+          <img
+            src="../assets/Image (5).svg"
+            alt="category 1"
+            class="w-full lg:w-fit"
+          />
+          <div
+            class="absolute bottom-0.2 left-0 bg-[#000000] bg-opacity-70 p-5 w-full h-24 rounded-b-lg"
+          ></div>
+        </div>
+
+        <!-- category 2 -->
+        <div class="relative mb-6 phones:mb-0">
+          <img
+            src="../assets/Image (6).svg"
+            alt="category 2"
+            class="w-full lg:w-fit"
+          />
+          <div
+            class="absolute bottom-0.2 left-0 bg-[#000000] bg-opacity-70 p-5 flex gap-2 flex-col w-full rounded-b-lg"
+          >
+            <p class="font-semibold text-white text-xl capitalize">
+              wing chair
+            </p>
+            <p class="font-regular opacity-70 text-white capitalize text-base">
+              3,584 Products
+            </p>
+          </div>
+        </div>
+
+        <!-- category 3 -->
+        <div class="relative mb-6 phones:mb-0">
+          <img
+            src="../assets/Image (7).svg"
+            alt="category 3"
+            class="w-full lg:w-fit"
+          />
+          <div
+            class="absolute bottom-0.2 left-0 bg-[#000000] bg-opacity-70 p-5 flex gap-2 flex-col w-full rounded-b-lg"
+          >
+            <p class="font-semibold text-white text-xl capitalize">
+              Wooden Chair
+            </p>
+            <p class="font-regular opacity-70 text-white capitalize text-base">
+              157 Products
+            </p>
+          </div>
+        </div>
+
+        <!-- category 4 -->
+        <div class="relative mb-6 phones:mb-0">
+          <img
+            src="../assets/Image (8).svg"
+            alt="category 4"
+            class="w-full lg:w-fit"
+          />
+          <div
+            class="absolute bottom-0.2 left-0 bg-[#000000] bg-opacity-70 p-5 flex gap-2 flex-col w-full rounded-b-lg"
+          >
+            <p class="font-semibold text-white text-xl capitalize">
+              Desk Chair
+            </p>
+            <p class="font-regular opacity-70 text-white capitalize text-base">
+              154 Products
+            </p>
+          </div>
+        </div>
+
+        <!-- category 5 -->
+        <div class="relative opacity-30 hidden lg:block">
+          <img
+            src="../assets/Image (9).svg"
+            alt="category 5"
+            class="w-full lg:w-fit"
+          />
+          <div
+            class="absolute bottom-0.2 left-0 bg-[#000000] bg-opacity-70 p-5 flex gap-2 flex-col w-full rounded-b-lg"
+          >
+            <p class="font-semibold text-white text-xl capitalize">
+              Park Bench
+            </p>
+            <p class="font-regular opacity-70 text-white capitalize text-base">
+              154 Products
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section ✅ -->
+    
+    <section>
+      <div class="wrapper">
+        <div class="">
+          <p
+            class="font-semibold text-primary text-4xl py-1 capitalize text-center"
+          >
+            our products
+          </p>
+          <div
+            class="mt-4 flex gap-4 items-center justify-center text-center lg:flex lg:gap-4 lg:w-full phones:grid phones:grid-cols-3 phones:gap-4"
+          >
+            <p
+              class="uppercase text-base font-medium text-primary underline underline-offset-8 decoration-secondary"
+            >
+              All
+            </p>
+            <p class="uppercase text-base font-medium text-gray">newest</p>
+            <p class="uppercase text-base font-medium text-primary">Trending</p>
+            <p class="uppercase text-base font-medium text-gray">
+              Best Sellers
+            </p>
+            <p class="uppercase text-base font-medium text-gray">Featured</p>
+          </div>
+        </div>
+
+        <div
+          class="pt-10 pb-20 flex gap-6 flex-wrap lg:flex-row phones:flex-col"
+        >
+          <!-- Feture 1 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <div class="relative">
+              <img
+                src="../assets/Image (1).svg"
+                alt="product 1"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#01AD5A] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  New
+                </p>
+                <div
+                  class="bg-white rounded-lg flex items-center justify-center hover:cursor-pointer"
+                >
+                  <img src="/assets/Heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart.svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 2 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <div class="relative">
+              <img
+                src="../assets/Image (2).svg"
+                alt="product 2"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#F5813F] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  sales
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                  <span class="text-gray font-regular text-base line-through"
+                    >$39</span
+                  >
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 3 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <img
+              src="../assets/Image (3).svg"
+              alt="product 3"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 4 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <img
+              src="../assets/Image (4).svg"
+              alt="product 4"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 5 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <div class="relative">
+              <img
+                src="../assets/Image (6).svg"
+                alt="product 5"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#01AD5A] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  New
+                </p>
+                <div
+                  class="bg-white rounded-lg flex items-center justify-center hover:cursor-pointer"
+                >
+                  <img src="/assets/Heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart.svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 6 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <div class="relative">
+              <img
+                src="../assets/Image (11).svg"
+                alt="product 6"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#F5813F] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  sales
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                  <span class="text-gray font-regular text-base line-through"
+                    >$39</span
+                  >
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 7 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <img
+              src="../assets/Image (10).svg"
+              alt="product 7"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 8 -->
+          <div class="flex flex-col lg:w-[calc(25%-1.125rem)] phones:w-full">
+            <img
+              src="../assets/Image (1).svg"
+              alt="product 8"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback section ✅ -->
+    <section class="bg-[#F0F2F3]">
+      <div class="wrapper">
+        <!-- Title -->
+        <div
+          class="flex items-center lg:flex-row justify-between phones:flex-col"
+        >
+          <p class="font-semibold text-primary text-4xl py-1 capitalize mt-20">
+            What client says about us
+          </p>
+          <div class="flex gap-4 lg:mt-20 phones:mt-5 phones:mb-5 lg:mb-10">
+            <img src="../assets/Arrow (1).svg" alt="arrow" class="w-fit" />
+            <img src="../assets/Arrow.svg" alt="arrow" class="w-fit" />
+          </div>
+        </div>
+
+        <!-- feedbacks -->
+        <div class="flex gap-6 flex-wrap pb-20 lg:flex-row phones:flex-col">
+          <!-- Feedback 1 -->
+          <div
+            class="bg-white rounded-lg flex flex-col gap-6 p-10 lg:w-[calc(50%-0.75rem)] phones:w-full relative"
+          >
+            <div class="border-l-2 pl-4 border-secondary">
+              <p
+                class="text-xl text-gray2 font-regular leading-[150%] capitalize"
+              >
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vivamus sit amet mi nec massa tincidunt blandit et eu sem.
+                Maecenas laoreet ultrices diam dignissim posuere. Aenean
+                ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus.
+                In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit
+                et“
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <img src="../assets/Image (12).svg" alt="user 1" />
+              <div class="flex flex-col gap-1">
+                <p
+                  class="text-primary text-xl font-medium leading-[140%] capitalize"
+                >
+                  Kristin Watson
+                </p>
+                <p
+                  class="text-gray text-lg font-regular leading-[140%] capitalize"
+                >
+                  Fashion Designer
+                </p>
+              </div>
+            </div>
+            <div class="lg:absolute lg:bottom-12 lg:right-8 phones:hidden">
+              <img src="../assets/Group (3).svg" alt="group" />
+            </div>
+          </div>
+
+          <!-- Feedback 2 -->
+          <div
+            class="bg-white rounded-lg flex flex-col p-10 lg:w-[calc(50%-0.75rem)] phones:w-full relative"
+          >
+            <div class="border-l-2 pl-4 border-secondary">
+              <p
+                class="text-xl text-gray2 font-regular leading-[150%] capitalize"
+              >
+                Nullam sapien elit, dignissim eu viverra et, scelerisque et
+                felis. Aliquam egestas dui elit, quis tincidunt lacus aliquam
+                et. Duis nulla velit, dignissim ut odio ac, eleifend luctus leo.
+                Ut ac imperdiet velit. Aliquam semper ex in volutpat rutrum.
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 mt-auto">
+              <div class="flex gap-3">
+                <img src="../assets/Image (13).svg" alt="user 2" />
+                <div class="flex flex-col gap-1">
+                  <p
+                    class="text-primary text-xl font-medium leading-[140%] capitalize"
+                  >
+                    Esther Howard
+                  </p>
+                  <p
+                    class="text-gray text-lg font-regular leading-[140%] capitalize"
+                  >
+                    Fashion Designer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:absolute lg:bottom-12 lg:right-8 phones:hidden">
+              <img src="../assets/Group (3).svg" alt="group" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section ✅ -->
+    <section>
+      <div class="wrapper">
+        <div
+          class="flex items-center lg:flex-row justify-between mt-20 phones:flex-col"
+        >
+          <p class="font-semibold text-primary text-4xl py-1 capitalize">
+            featured products
+          </p>
+          <div class="flex gap-4">
+            <img src="../assets/Arrow (1).svg" alt="arrow" class="w-fit" />
+            <img src="../assets/Arrow.svg" alt="arrow" class="w-fit" />
+          </div>
+        </div>
+
+        <div class="pt-10 pb-20 flex gap-6 lg:flex-row phones:flex-col">
+          <!-- Feture 1 -->
+          <div class="flex flex-col">
+            <div class="relative">
+              <img
+                src="../assets/Image (1).svg"
+                alt="product 1"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#01AD5A] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  New
+                </p>
+                <div
+                  class="bg-white rounded-lg flex items-center justify-center hover:cursor-pointer"
+                >
+                  <img src="/assets/Heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart.svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 2 -->
+          <div class="flex flex-col">
+            <div class="relative">
+              <img
+                src="../assets/Image (2).svg"
+                alt="product 2"
+                class="lg:w-fit phones:w-full"
+              />
+              <div
+                class="absolute top-5 left-5 right-5 flex justify-between items-center"
+              >
+                <p
+                  class="bg-[#F5813F] text-white capitalize px-2 py-1 rounded-md font-medium text-base leading-[110%]"
+                >
+                  sales
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                  <span class="text-gray font-regular text-base line-through"
+                    >$39</span
+                  >
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 3 -->
+          <div class="flex flex-col">
+            <img
+              src="../assets/Image (3).svg"
+              alt="product 3"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Feture 4 -->
+          <div class="flex flex-col">
+            <img
+              src="../assets/Image (4).svg"
+              alt="product 4"
+              class="lg:w-fit phones:w-full"
+            />
+            <div class="flex flex-row items-center justify-between">
+              <div>
+                <p
+                  class="text-secondary text-base font-regular capitalize mt-3"
+                >
+                  Library Stool Chair
+                </p>
+                <p class="text-primary text-lg font-semibold capitalize mt-2">
+                  $20
+                </p>
+              </div>
+              <img
+                src="../assets/Add Cart (1).svg"
+                alt="cart"
+                class="w-11 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <menu>
+      <div class="wrapper border-b border-t border-gray3 py-20">
+        <div
+          class="lg:grid lg:grid-cols-[4fr_2fr_2fr_2fr] items-start justify-center phones:flex phones:flex-col phones:gap-5"
+        >
+          <!-- Section 1 -->
+          <div class="flex gap-6 flex-col mr-5">
+            <!-- Logo -->
+            <div class="flex gap-2">
+              <img src="../assets/Logo Icon.svg" alt="Logo" class="w-fit" />
+              <h1
+                class="capitalize text-3xl font-semibold text-primary leading-loose"
+              >
+                Comforty
+              </h1>
+            </div>
+
+            <!-- Paragraph -->
+            <p class="font-regular text-lg text-gray">
+              Vivamus tristique odio sit amet velit semper, eu posuere turpis
+              interdum. Cras egestas purus
+            </p>
+
+            <!-- Icons -->
+            <div class="flex gap-1">
+              <img src="../assets/Group 44.svg" alt="icon" />
+              <img src="../assets/Group 48.svg" alt="icon" />
+              <img src="../assets/Group 50.svg" alt="icon" />
+              <img src="../assets/Group 47.svg" alt="icon" />
+              <img src="../assets/Group 46.svg" alt="icon" />
+            </div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="flex flex-col">
+            <p
+              class="font-medium text-gray text-sm font-regular leading-[1.1] tracking-[0.06em] uppercase mb-5"
+            >
+              Category
+            </p>
+            <div class="flex gap-3 flex-col">
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                Sofa
+              </p>
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                Armchair
+              </p>
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                Wing Chair
+              </p>
+              <p
+                class="font-regular text-secondary text-base font-regular leading-[1.1] capitalize underline underline-offset-2 decoration-secondary"
+              >
+                Desk Chair
+              </p>
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                wooden Chair
+              </p>
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                Park Bench
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="flex flex-col">
+            <p
+              class="font-medium text-gray text-sm font-regular leading-[1.1] tracking-[0.06em] uppercase mb-5"
+            >
+              Support
+            </p>
+            <div class="flex gap-3 flex-col">
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                help & support
+              </p>
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                tearms & conditions
+              </p>
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                privacy policity
+              </p>
+              <p
+                class="font-regular text-primary text-base font-regular leading-[1.1] capitalize"
+              >
+                help
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="flex flex-col gap-5">
+            <p
+              class="font-medium text-gray text-sm font-regular leading-[1.1] tracking-[0.06em] uppercase"
+            >
+              newslettwe
+            </p>
+            <div
+              class="flex gap-3 lg:flex-row phones:flex-col phones:items-center phones:justify-center"
+            >
+              <input
+                type="text"
+                placeholder="Your email"
+                class="py-2 px-4 rounded-md bg-white shadow-sm text-gray lg:w-[285px] phones:w-full text-Regular text-[16px]"
+              />
+              <button
+                class="text-white bg-secondary rounded-lg capitalize py-3 px-6"
+              >
+                Subsicribe
+              </button>
+            </div>
+            <p class="text-base font-regular text-gray">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              tincidunt erat enim.
+            </p>
+          </div>
+        </div>
+      </div>
+    </menu>
+
+    <footer>
+      <div class="wrapper">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center py-7"
+        >
+          <p
+            class="text-sm font-regular text-gray text-center lg:text-left mb-4 lg:mb-0"
+          >
+            @ 2021 - Blogy - Designed & Develop by
+            <span class="text-black capitalize">Zakirsoft</span>
+          </p>
+          <!-- <img src="../assets/Group 13.svg" alt="payment" class="mt-4 lg:mt-0" /> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const menuTogglePhones = document.getElementById("menuTogglePhones");
+    const menuPhones = document.getElementById("menuPhones");
+  
+    menuTogglePhones.addEventListener("click", () => {
+      menuPhones.classList.toggle("phones:hidden");
+      menuTogglePhones.innerHTML = menuPhones.classList.contains("phones:hidden")
+        ? '<i class="material-icons">menu</i>'
+        : '<i class="material-icons">close</i>';
+    });
+  </script>
 </html>
