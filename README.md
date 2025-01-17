@@ -32,6 +32,7 @@ Ensure you have installed:
    npm install
 
 6. Run Tailwind CSS in watch mode:
-   ```bash npm run watch-tailwind
+   ```bash
+   npm run watch-tailwind
 
 8.  Run the project locally
